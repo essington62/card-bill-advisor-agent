@@ -1,0 +1,33 @@
+# Configuração da fonte de dados de clientes — consultor_fatura.
+#
+# No dia do hackathon, trocar `source.path` (e o mapeamento em `columns`,
+# se os nomes de coluna vierem diferentes) para apontar para a base real
+# do Itaú — sem tocar em nenhum código (ver consultor_fatura/dados_clientes.py).
+
+source:
+  type: csv
+  path: data/itau.csv    # relativo à raiz do projeto
+
+columns:
+  client_id: client_id
+  relationship_type: relationship_type
+  monthly_income: monthly_income
+  bill_amount: bill_amount
+  minimum_payment: minimum_payment
+  days_to_due: days_to_due
+  dias_em_atraso: dias_em_atraso
+  credit_limit: credit_limit
+  available_limit: available_limit
+  cash_purchases: cash_purchases
+  installment_purchases: installment_purchases
+  interest_installments: interest_installments
+  previous_balance: previous_balance
+  fees: fees
+  previous_bill_amount: previous_bill_amount
+  previous_payment_amount: previous_payment_amount
+  previous_revolving: previous_revolving
+  consecutive_partial_payments: consecutive_partial_payments
+  has_active_installment: has_active_installment
+  has_active_renegotiation: has_active_renegotiation
+  eligible_bill_installment: eligible_bill_installment
+  eligible_personal_loan: eligible_personal_loan
